@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/smallgreybutton"
+        android:id="@+id/button9"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="OUBLI"
+        android:textSize="30dp"
+        android:id="@+id/textView14"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/background_rectangle"
+        android:layout_width="330dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MARQUE"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:id="@+id/textView15"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="NOMBRE DE COMPRIMES"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:id="@+id/textView16"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="HEURE DU RAPPEL"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:id="@+id/textView17"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="NOM/PRENOM"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:id="@+id/textView18"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="OUI"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button10"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="NON"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button11"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
