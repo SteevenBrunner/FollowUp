@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity
 		//writeInfos("Pill", "3 semaines");
 
 		try {
-			//readInfos();
+			readInfos();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
