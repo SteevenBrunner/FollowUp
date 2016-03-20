@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="URGENCE"
+        android:id="@+id/emergency_title"
+        android:layout_gravity="center"
+        android:layout_weight="0.39"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:id="@+id/forgotButton"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/oublie_2"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="OUBLI"
+        android:id="@+id/emergency_forgot"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.06"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:id="@+id/throwupButton2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+        android:background="@drawable/chiote"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="VOMISSEMENT / DIARRHEE"
+        android:id="@+id/textView10"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:id="@+id/otherButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+        android:background="@drawable/autre"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="AUTRE"
+        android:id="@+id/textView11"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ffffff" />
+</LinearLayout>
