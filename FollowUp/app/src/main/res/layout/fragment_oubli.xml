@@ -1,93 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
-    <Button
+    <Space
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/smallgreybutton"
-        android:id="@+id/button9"
-        android:layout_gravity="center_horizontal" />
+        android:layout_height="20dp" />
 
     <TextView
+        android:id="@+id/textViewFirst"
+        android:text="OUBLI"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="OUBLI"
-        android:textSize="30dp"
-        android:id="@+id/textView14"
         android:layout_gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
 
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/background_rectangle"
-        android:layout_width="330dp"
-        android:layout_height="215dp"
-        android:layout_marginTop="25dp"
-        android:gravity="center"
-        android:layout_gravity="center_horizontal">
+        android:layout_width="254.8dp"
+        android:layout_height="323.4dp"
+        android:background="@drawable/questionnaire"
+        android:layout_gravity="center">
 
-        <TextView
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="MARQUE"
-            android:gravity="center"
-            android:background="#FFFFFF"
-            android:id="@+id/textView15"
-            android:layout_gravity="center_horizontal" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="39dp" />
 
-        <TextView
-            android:layout_width="260dp"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="NOMBRE DE COMPRIMES"
-            android:layout_marginTop="20dp"
-            android:background="#FFFFFF"
-            android:id="@+id/textView16"
-            android:layout_gravity="center_horizontal" />
+            android:id="@+id/editTextMarque"/>
 
-        <TextView
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="HEURE DU RAPPEL"
-            android:layout_marginTop="20dp"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:id="@+id/textView17"
-            android:layout_gravity="center_horizontal" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
 
-        <TextView
-            android:layout_width="260dp"
-            android:gravity="center"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="NOM/PRENOM"
-            android:layout_marginTop="20dp"
-            android:background="#FFFFFF"
-            android:id="@+id/textView18"
-            android:layout_gravity="center_horizontal" />
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextComprime"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="27dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/editTextHeure"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextNom"/>
     </LinearLayout>
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="OUI"
-        android:textSize="30dp"
-        android:layout_marginTop="15dp"
-        android:id="@+id/button10"
-        android:layout_gravity="center_horizontal" />
-
-    <Button
+    <Space
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="NON"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="10dp" />
+
+    <ImageButton
+        android:layout_width="140dp"
+        android:layout_height="46.875dp"
+        android:id="@+id/button10"
+        android:background="@drawable/valider"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="46.875dp"
         android:id="@+id/button11"
-        android:layout_gravity="center_horizontal" />
+        android:background="@drawable/modifier"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

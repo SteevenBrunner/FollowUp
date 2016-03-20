@@ -4,71 +4,86 @@
     android:layout_height="match_parent"
     android:background="@drawable/background">
 
-    <Button
+    <Space
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:id="@+id/button5"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/smallgreybutton"
-        android:layout_marginTop="15dp"/>
+        android:layout_height="20dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewFirst"
         android:text="URGENCE"
-        android:id="@+id/textView10"
-        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal" />
 
-    <Button
+    <Space
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_height="30dp" />
+
+    <ImageButton
         android:id="@+id/button6"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/smallroundedbutton"
-        android:layout_marginTop="25dp"/>
+        android:background="@drawable/oublie"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal|top" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="OUBLI"
-        android:id="@+id/textView11"
-        android:layout_gravity="center_horizontal"
-        android:textSize="30dp"/>
-
-    <Button
+        android:textSize="25sp"
+        android:textColor="#ffffff"
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <ImageButton
         android:id="@+id/button7"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/smallroundedbutton"
-        android:layout_marginTop="5dp"/>
+        android:background="@drawable/chiote"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal|top" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
 
     <TextView
+        android:text="VOMISSEMENT / DIAHRRÉE"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="VOMISSEMENT"
-        android:textSize="30dp"
-        android:id="@+id/textView12"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal|top" />
 
-    <Button
+    <Space
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_height="20dp" />
+
+    <ImageButton
         android:id="@+id/button8"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/smallroundedbutton"
-        android:layout_marginTop="5dp"/>
+        android:background="@drawable/autre"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal|top" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
 
     <TextView
+        android:text="AUTRE"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="AUTRES"
-        android:textSize="30dp"
-        android:id="@+id/textView13"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal|top" />
 </LinearLayout>

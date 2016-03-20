@@ -1,75 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textViewFirst"
+        android:text="OUBLI"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="RECOMMANDATIONS"
+        android:layout_marginTop="10sp"
+        android:textColor="#ffffff"
         android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:id="@+id/textView25"
+        android:text="Il y a un risque de grossesse"
         android:layout_gravity="center_horizontal" />
 
     <TextView
-        android:layout_width="320dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex."
-        android:id="@+id/textView26"
+        android:layout_marginTop="10sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:text="- Prenez le comprimé oublié, même si 2 comprimés doivent être pris en même temps.
+- Supprimez la pause entre 2 plaquettes, enchaînez-les.
+- Faites un test de grossesse dans 3 semaines."
         android:layout_gravity="center_horizontal" />
 
-    <Button
+    <Space
         android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+
+    <ImageButton
+        android:background="@drawable/capote"
+        android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/verysmallgreybutton"
-        android:id="@+id/button14"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal|top" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="CAPOTE PENDANT 7 JOURS"
-        android:textSize="18dp"
-        android:id="@+id/textView27"
+        android:layout_marginTop="3sp"
+        android:textColor="#ffffff"
+        android:text="PRESERVATIF"
         android:layout_gravity="center_horizontal" />
 
-    <Button
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:text="Utilisez un préservatif de 7 jours suivant l'oubli."
+        android:layout_gravity="center_horizontal" />
+
+    <Space
         android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <ImageButton
+        android:background="@drawable/test"
+        android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/verysmallgreybutton"
-        android:id="@+id/button15"
+        android:layout_gravity="center_horizontal|top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:textColor="#ffffff"
+        android:text="TEST DE GROSSESSE"
         android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="TEST DE GROSSESSE APRES 3 SEMAINES"
-        android:id="@+id/textView28"
-        android:textSize="18dp"
+        android:layout_marginTop="3sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:text="Faites un test de grossesse dans 3 semaines."
         android:layout_gravity="center_horizontal" />
 
-    <Button
+    <Space
         android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <ImageButton
+        android:background="@drawable/lendemain"
+        android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/verysmallgreybutton"
-        android:id="@+id/button16"
+        android:layout_gravity="center_horizontal|top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:textColor="#ffffff"
+        android:text="PILULE D'URGENCE"
         android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="PILLULE D'URGENCE"
-        android:textSize="18dp"
-        android:id="@+id/textView29"
+        android:layout_marginTop="3sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:text="Utilisez une pilule du (sur)lendemain"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>

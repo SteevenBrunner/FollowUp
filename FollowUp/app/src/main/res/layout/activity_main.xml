@@ -14,7 +14,7 @@
         android:id="@+id/textViewFirst"
         android:text="CALENDRIER"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:orientation="vertical">
-            <Button
+            <ImageButton
                 android:background="@drawable/urgence"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -198,7 +198,7 @@
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="10dp" />
-            <Button
+            <ImageButton
                 android:background="@drawable/map"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -220,7 +220,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:orientation="vertical">
-            <Button
+            <ImageButton
                 android:background="@drawable/feedback"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -236,7 +236,7 @@
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="10dp" />
-            <Button
+            <ImageButton
                 android:background="@drawable/parametre"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"

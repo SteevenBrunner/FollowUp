@@ -1,54 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
-    <Button
+    <Space
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/smallgreybutton"
-        android:id="@+id/button13"
-        android:layout_gravity="center_horizontal" />
+        android:layout_height="20dp" />
 
     <TextView
+        android:text="OUBLI"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="PILLULE"
-        android:textSize="30dp"
-        android:id="@+id/textView21"
         android:layout_gravity="center_horizontal" />
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
     <TextView
-        android:layout_marginTop="45dp"
-        android:layout_width="300dp"
-        android:gravity="center"
+        android:text="AVEZ-VOUS EU UN RAPPORT DANS LES 5 DERNIERS JOURS?"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="AVEZ VOUS EU DES RAPPORTS DANS LES 5 DERNIERS JOURS ?"
-        android:id="@+id/textView22"
         android:layout_gravity="center_horizontal" />
 
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="OUI"
-        android:background="#808080"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:id="@+id/textView23"
-        android:layout_gravity="center_horizontal" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
 
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="NON"
-        android:background="#808080"
-        android:gravity="center"
-        android:layout_marginTop="35dp"
-        android:id="@+id/textView24"
-        android:layout_gravity="center_horizontal" />
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="46.875dp"
+        android:id="@+id/plus12"
+        android:background="@drawable/oui"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="46.875dp"
+        android:id="@+id/minus12"
+        android:background="@drawable/non"
+        android:layout_gravity="center"/>
 </LinearLayout>
