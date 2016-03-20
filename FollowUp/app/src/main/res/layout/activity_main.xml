@@ -1,28 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/fragment_container"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <Button
-        android:background="@drawable/roundedbutton"
-        android:paddingTop="100dp"
-        android:layout_width="200dip"
-        android:layout_height="140dip"
-        android:id="@+id/urgence"
-        android:layout_row="4"
-        android:layout_column="0"
-        android:layout_gravity="center_horizontal|top" />
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
 
     <TextView
-        android:paddingTop="117dp"
-        android:textSize="24dp"
-        android:textColor="#000000"
+        android:id="@+id/textViewFirst"
+        android:text="CALENDRIER"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Urgence"
-        android:layout_row="1"
-        android:layout_column="0"
-        android:layout_gravity="center_horizontal|top" />
+        android:layout_gravity="center_horizontal" />
 
-</FrameLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/textViewCalendar"
+        android:text="MARS"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="260dp"
+        android:layout_height="150dp"
+        android:columnWidth="35dp"
+        android:numColumns="5"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:stretchMode="columnWidth"
+        android:layout_gravity="center" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:background="@drawable/legende_cercle_vert_contour"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center" />
+
+                <Space
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Déjà prise"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:background="@drawable/legende_cercle_gris_contour"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center" />
+
+                <Space
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="À prendre"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:background="@drawable/legende_cercle_rouge_contour"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center" />
+
+                <Space
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Non prise"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:background="@drawable/legende_cercle_vide"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center" />
+
+                <Space
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Pas de prise"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+            <Button
+                android:background="@drawable/urgence"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/urgence"
+                android:layout_gravity="center" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URGENCE"
+                android:layout_gravity="center" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+            <Button
+                android:background="@drawable/map"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARTE"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+            <Button
+                android:background="@drawable/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HISTORIQUE"
+                android:layout_gravity="center" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+            <Button
+                android:background="@drawable/parametre"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PARAMETRES"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
