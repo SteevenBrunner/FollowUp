@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import followup.followup.R;
 
@@ -22,7 +23,7 @@ public class FirstTimeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_time);
 
-        Button buttonPillule = (Button) findViewById(R.id.buttonPillule);
+        ImageButton buttonPillule = (ImageButton) findViewById(R.id.buttonPilule);
 
         buttonPillule.setOnClickListener(new View.OnClickListener() {
             @Override
