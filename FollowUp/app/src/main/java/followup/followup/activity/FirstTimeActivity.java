@@ -23,8 +23,6 @@ public class FirstTimeActivity extends AppCompatActivity
         setContentView(R.layout.activity_first_time);
 
         Button buttonPillule = (Button) findViewById(R.id.buttonPillule);
-        final FragmentManager fm = getFragmentManager();
-        final android.app.Fragment fragment = fm.findFragmentById(R.id.first_pillule_setting_view);
 
         buttonPillule.setOnClickListener(new View.OnClickListener() {
             @Override
